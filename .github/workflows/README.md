@@ -29,6 +29,9 @@ Static test data stored in src/data
 
 Decouples test logic from hard-coded values
 
+## 📂 Project Structure
+
+```text
 .
 ├── .github/
 │   └── workflows/
@@ -49,10 +52,11 @@ Decouples test logic from hard-coded values
 │       ├── HomePage.ts
 │       ├── Customers.ts
 │       ├── AddCustomers.ts
+│       ├── AddCustomers.ts
 │       ├── OpenAccount.ts
 │       └── CustomerDepositPage.ts
 │
-├── tests/                        # Test specifications
+├── tests/
 │   ├── addcustomer.spec.ts
 │   ├── customer-account.spec.ts
 │   ├── deposit-customer-account.spec.ts
