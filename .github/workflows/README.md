@@ -29,43 +29,36 @@ Static test data stored in src/data
 
 Decouples test logic from hard-coded values
 
-
 .
 ├── .github/
 │   └── workflows/
-│       └── playwright.yml          # GitHub Actions CI pipeline
+│       └── playwright.yml        # GitHub Actions CI pipeline
 │
 ├── config/
-│   └── env.ts                      # Environment configuration (URLs, env vars)
-│
-├── node_modules/                   # Project dependencies
-│
-├── playwright-report/              # HTML test reports
+│   └── env.ts                    # Environment configuration
 │
 ├── src/
 │   ├── data/
-│   │   └── customerData.json       # Static test data
+│   │   └── customerData.json     # Static test data
 │   │
 │   ├── fixtures/
-│   │   └── homePageFixture.ts      # Custom Playwright fixtures
+│   │   └── homePageFixture.ts    # Custom Playwright fixtures
 │   │
-│   ├── pages/                      # Page Object Model (POM)
-│   │   ├── BasePage.ts
-│   │   ├── HomePage.ts
-│   │   ├── Customers.ts
-│   │   ├── AddCustomers.ts
-│   │   ├── OpenAccount.ts
-│   │   └── CustomerDepositPage.ts
-│   │
-│   └── tests/                      # Test specifications
-│       ├── addcustomer.spec.ts
-│       ├── customer-account.spec.ts
-│       ├── deposit-customer-account.spec.ts
-│       ├── homepage.spec.ts
-│       ├── homepagewithfixture.spec.ts
-│       └── openaccount.spec.ts
+│   └── pages/                    # Page Object Model (POM)
+│       ├── BasePage.ts
+│       ├── HomePage.ts
+│       ├── Customers.ts
+│       ├── AddCustomers.ts
+│       ├── OpenAccount.ts
+│       └── CustomerDepositPage.ts
 │
-├── test-results/                   # Raw Playwright execution results
+├── tests/                        # Test specifications
+│   ├── addcustomer.spec.ts
+│   ├── customer-account.spec.ts
+│   ├── deposit-customer-account.spec.ts
+│   ├── homepage.spec.ts
+│   ├── homepagewithfixture.spec.ts
+│   └── openaccount.spec.ts
 │
 ├── .gitignore
 ├── package.json
